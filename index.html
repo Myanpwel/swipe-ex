@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Myanpwel | Swipe Example</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<style>
+	body {
+		background: #EFEFEF;
+	}
+	.event-block {
+		background: #fff;
+	}
+
+	.swipe {
+	  overflow: hidden;
+	  visibility: hidden;
+	  position: relative;
+	}
+	.swipe-wrap {
+	  overflow: hidden;
+	  position: relative;
+	}
+	.swipe-wrap > div {
+	  float:left;
+	  width:100%;
+	  position: relative;
+	}
+	</style>
+</head>
+<body>
+
+	<div class="container">
+		<div class="col-md-12 text-center">
+			<h1>Swipe Events</h1>
+			<hr>
+		</div>
+
+		<div class="col-md-4 col-md-offset-4 event-block swipe" id="slider">
+			<div class="swipe-wrap">
+				<div>
+					<img src="https://scontent.xx.fbcdn.net/hphotos-xat1/v/t1.0-9/12109110_1683304561906574_401975579930430016_n.jpg?oh=9eaf9b33827b6fcf38a45a56505f23a0&oe=56ECD9D6" alt="Cover" class="img-responsive" style="margin-top:10px">
+					<h3>This is Testing Event!</h3>
+				</div>
+				<div>
+					<img src="img/cover.jpg" alt="Cover" class="img-responsive" style="margin-top:10px">
+					<h3>This is Testing Event!</h3>
+				</div>
+				<div>
+					<img src="img/cover.jpg" alt="Cover" class="img-responsive" style="margin-top:10px">
+					<h3>This is Testing Event!</h3>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/swipe/2.0.0/swipe.js"></script>
+
+	<script>
+	$(document).ready(function() {
+		window.mySwipe = Swipe(document.getElementById('slider'));
+	});
+	</script>
+</body>
+</html>
